@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-*{
+*, *::before,*::after{//está aplicando a todos os elementos htmls e a todos os elementos que foram inseridos antes e depois do conteúdo(content) desses elementos
   margin:0;
   padding:0;
   box-sizing: border-box;
@@ -13,6 +13,8 @@ body{
 }
 
 html{
+  /*62.5% of 16px(default from most browsers) = 10px. So to use rem on font size now is relative to 10px*/
+    font-size:62.5%;
     min-height:100%;
     background: var(--primary);
 }
