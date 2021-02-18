@@ -14,9 +14,9 @@ const Profile: React.FC = () => {
             followers={887}
             following={7}
             company={'Xcelent'}
-            location={'Rio de Janeiro, Brazil'}
-            email={'clbmribas@gmail.com'}
-            blog={null}
+            location={'Rio de Janeiro so colocando p teste, Brazil'}
+            email={'clbmribas@gmail.com.email valido'}
+            blog={undefined}
           />
         </LeftSide>
         <RightSide></RightSide>
