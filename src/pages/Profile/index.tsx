@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Main, LeftSide, RightSide } from './styles';
+import { Container, Main, LeftSide, RightSide, Repos } from './styles';
 import ProfileData from './../../components/ProfileData/index';
+import RepositoryCard from './../../components/RepositoryCard/index';
 
 const Profile: React.FC = () => {
   return (
@@ -19,7 +20,24 @@ const Profile: React.FC = () => {
             blog={undefined}
           />
         </LeftSide>
-        <RightSide></RightSide>
+        <RightSide>
+          <Repos>
+            <h2>Random repositorys</h2>
+            <div>
+              {[1, 2, 3, 4, 5, 6].map(n => (
+                <RepositoryCard
+                  key={n}
+                  username={'tesrt'}
+                  repositoryname={'teste-teste'}
+                  description={'contains de description'}
+                  language={n % 3 === 0 ? 'JavaScript' : 'TypeScript'}
+                  stars={8}
+                  forks={4}
+                />
+              ))}
+            </div>
+          </Repos>
+        </RightSide>
       </Main>
     </Container>
   );

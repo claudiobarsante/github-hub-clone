@@ -12,6 +12,13 @@ export const Main = styled.div`
   display: flex;
   //mobile first, change de direction to column
   flex-direction: column;
+
+  margin: 0 auto;
+  max-width: 1280px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 export const LeftSide = styled.div`
   //in a desktop screen uses 25%
@@ -22,5 +29,23 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   @media (min-width: 768px) {
     width: 75%;
+  }
+`;
+
+export const Repos = styled.div`
+  margin-top: var(--verticalPadding);
+
+  > h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  > div {
+    margin-top: 8px;
+
+    display: grid;
+    grid-gap: 16px;
+
+    grid-template-columns: 1fr; //fr = fraction
   }
 `;
