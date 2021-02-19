@@ -3,7 +3,7 @@ import { Container, Main, LeftSide, RightSide, Repos } from './styles';
 import ProfileData from './../../components/ProfileData/index';
 import RepositoryCard from './../../components/RepositoryCard/index';
 
-const Profile: React.FC = () => {
+const Profile = () => {
   return (
     <Container>
       <Main>

@@ -20,7 +20,7 @@ interface Props {
   forks: number;
 }
 
-const RepositoryCard: React.FC<Props> = ({
+const RepositoryCard = ({
   key,
   username,
   repositoryname,
@@ -28,7 +28,7 @@ const RepositoryCard: React.FC<Props> = ({
   language,
   stars,
   forks,
-}) => {
+}: Props) => {
   const languageClass = language ? language.toLocaleLowerCase() : 'other';
   return (
     <Container>

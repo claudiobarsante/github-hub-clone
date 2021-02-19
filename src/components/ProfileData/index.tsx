@@ -24,7 +24,7 @@ interface Props {
   email?: string;
   blog?: string;
 }
-const ProfileData: React.FC<Props> = ({
+const ProfileData = ({
   username,
   name,
   avatarUrl,
@@ -34,7 +34,7 @@ const ProfileData: React.FC<Props> = ({
   location,
   email,
   blog,
-}) => {
+}: Props) => {
   return (
     <Container>
       <FlexAvatar>
