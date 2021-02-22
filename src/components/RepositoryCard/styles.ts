@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { RiBookLine, RiStarLine } from 'react-icons/ri';
+import { RiBookMarkLine, RiStarLine } from 'react-icons/ri';
 import { AiOutlineFork } from 'react-icons/ai';
 
 export const Container = styled.div`
@@ -8,9 +8,35 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 16px;
   border: 1px solid var(--border);
+  border-radius: 6px;
 `;
 
-export const Topside = styled.div``;
+export const Topside = styled.div`
+  > header {
+    display: flex;
+    align-items: center;
+
+    > a {
+      margin-left: 8px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  > p {
+    margin: 8px 0 16px;
+    font-size: 1.2rem;
+    color: var(--gray);
+    letter-spacing: 0.1px;
+  }
+`;
 export const Botside = styled.div``;
 
 const iconCSS = css`
@@ -20,7 +46,7 @@ const iconCSS = css`
   flex-shrink: 0;
 `;
 
-export const RepoIcon = styled(RiBookLine)`
+export const RepoIcon = styled(RiBookMarkLine)`
   ${iconCSS}
 `;
 export const StarIcon = styled(RiStarLine)`

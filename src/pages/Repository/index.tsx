@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Repository: React.FC = () => {
+const Repository = () => {
   return <div />;
 };
 

@@ -14,8 +14,8 @@ interface Props {
   key: number;
   username: string;
   repositoryname: string;
-  description: string;
-  language: string;
+  description?: string;
+  language?: string;
   stars: number;
   forks: number;
 }
